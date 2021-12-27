@@ -6,7 +6,7 @@ import JobsView from '../views/JobsView';
 
 Vue.use(vueRouter); // vue router setting
 
-const router = new VueRouter({ // make new router Object
+export const router = new VueRouter({ // make new router Object
     routes: [ // set router information inside Object
         {
             path: '/news', // url address
@@ -21,4 +21,4 @@ const router = new VueRouter({ // make new router Object
             component: JobsView,
         }
     ],
-})
+});
