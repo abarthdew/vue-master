@@ -4,7 +4,7 @@ import NewsView from '../views/NewsView';
 import AskView from '../views/AskView';
 import JobsView from '../views/JobsView';
 
-Vue.use(vueRouter); // vue router setting
+Vue.use(VueRouter); // vue router setting
 
 export const router = new VueRouter({ // make new router Object
     routes: [ // set router information inside Object
@@ -17,7 +17,7 @@ export const router = new VueRouter({ // make new router Object
             component: AskView, // You can see this page
         },
         {
-            path: '.jobs',
+            path: '/jobs',
             component: JobsView,
         }
     ],
