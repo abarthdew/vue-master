@@ -1,13 +1,13 @@
 <template>
     <div>
-        <li v-for="user in users" :key="user">
+        <li v-for="user in users" :key="user.id">
             {{ user.title }}
         </li>
     </div>
 </template>
 
 <script>
-import axios from 'axios';
+import { fetchNewsList } from '../api/index';
 
 export default {
     data() {
@@ -16,19 +16,12 @@ export default {
         }
     },
     created() {
-        axios.get('https://api.hnpwa.com/v0/news/1.json')
+        fetchNewsList()
         .then(res => {
-            console.log(res.data)
             this.users = res.data;
+            console.log(res.data)
         })
-        .catch(error => console.log(error));
-// ==>  // new Promise()
-        // .then(function(response) {
-        //     console.log(response);
-        // })
-        // .catch(function() {
-
-        // })
+        .catch(err => console.log(err));
     }
 }
 </script>
