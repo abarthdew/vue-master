@@ -12,22 +12,30 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
-        function fetchData() {
-            // 1
-            var result = [];
-
-            // 2
-            $.ajax({
-                url: 'https://api.hnpwa.com/v0/news/1.json',
-                success: function(data) { // run when ajax call success
-                    console.log('data callback result', data);
-                    result = data;
-                }
+        // ajax call function
+        function callAjax() {
+            return new Promise(function (resolve, reject) { // Promise must get parameter named resolve and reject
+                $.ajax({ // ajax call
+                    url: 'https://api.hnpwa.com/v0/news/1.json',
+                    success: function (data) {
+                        resolve(data); // when ajax call success, resolve handle success data
+                    }
+                });
             });
+        };
 
-            // 3
-            console.log('function result', result);
-        }
+        function fetchData() {
+            var result = [];
+            callAjax() // Promise Object call
+            .then(function(data) { // Promise resolve : Situation when Promise call success
+                console.log('data call result', data);
+                result = data;
+                console.log('function result', result);
+            })
+            .catch(function(err) { // Promise reject
+                console.log(err);
+            }); 
+        };
         fetchData();
     </script>
 </body>
