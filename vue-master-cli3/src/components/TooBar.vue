@@ -1,13 +1,23 @@
 <template>
-    <div>
-        ToolBar Header<br>
-        <router-link to="/news">News</router-link><br>  
-        <router-link to="/ask">Ask</router-link><br> 
-        <router-link to="/jobs">Jobs</router-link><br>  
+    <div class="header">
+        <router-link to="/news">News</router-link>&nbsp;|&nbsp;
+        <router-link to="/ask">Ask</router-link>&nbsp;|&nbsp;
+        <router-link to="/jobs">Jobs</router-link>  
         <!-- <router-link to="">This is Anchor Tag.</router-link>     -->
-        <!-- to="Url what you want to go" -->
-        <div>↓</div>
-        <div>↓</div>
-        <div>---------</div>
+        <!-- to="Url what you want to go" -->   
     </div>
 </template>
+
+<style lscoped>
+    .header {
+        padding: 8px;
+        display: flex;
+        background-color: #42b883
+    }
+    .header .router-link-exact-active {
+        color: green;
+    }
+    .header a {
+        color: white;
+    }
+</style>
