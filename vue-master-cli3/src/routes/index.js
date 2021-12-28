@@ -9,6 +9,7 @@ import ItemView from '../views/ItemView';
 Vue.use(VueRouter); // vue router setting
 
 export const router = new VueRouter({ // make new router Object
+    mode: 'history',
     routes: [ // set router information inside Object
         {
             path: '/',
