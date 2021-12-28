@@ -2,9 +2,11 @@
     <div class="header">
         <router-link to="/news">News</router-link>&nbsp;|&nbsp;
         <router-link to="/ask">Ask</router-link>&nbsp;|&nbsp;
-        <router-link to="/jobs">Jobs</router-link>  
+        <router-link to="/jobs">Jobs</router-link>&nbsp;|&nbsp;
         <!-- <router-link to="">This is Anchor Tag.</router-link>     -->
         <!-- to="Url what you want to go" -->   
+        <router-link to="/user">User</router-link>&nbsp;|&nbsp;
+        <router-link to="/item">Item</router-link>
     </div>
 </template>
 

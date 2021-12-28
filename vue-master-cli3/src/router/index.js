@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'; // get router
 import NewsView from '../views/NewsView';
 import AskView from '../views/AskView';
 import JobsView from '../views/JobsView';
+import UserView from '../views/UserView';
+import ItemView from '../views/ItemView';
 
 Vue.use(VueRouter); // vue router setting
 
@@ -23,6 +25,14 @@ export const router = new VueRouter({ // make new router Object
         {
             path: '/jobs',
             component: JobsView,
+        },
+        {
+            path: '/user',
+            component: UserView,
+        },
+        {
+            path: '/item',
+            component: ItemView,
         }
     ],
 });
