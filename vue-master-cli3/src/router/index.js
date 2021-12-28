@@ -9,6 +9,10 @@ Vue.use(VueRouter); // vue router setting
 export const router = new VueRouter({ // make new router Object
     routes: [ // set router information inside Object
         {
+            path: '/',
+            redirect: '/news' // Go to NewsView directly
+        },
+        {
             path: '/news', // url address
             component: NewsView, // displayed component for url; aka 'page'
         },
