@@ -1,18 +1,18 @@
 <template>
     <div>
-        <li v-for="user in news" :key="user.id">
+        <li v-for="user in getNews" :key="user.id">
             {{ user.title }}
         </li>
     </div>
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default {
     computed: {
-        ...mapState({
-            news: 'news',
+        ...mapGetters({
+            getNews: 'getNews',
         }),
     },
     created() {
