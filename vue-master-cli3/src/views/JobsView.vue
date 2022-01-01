@@ -1,7 +1,10 @@
 <template>
     <div>
         <li v-for="job in getJobs" :key="job.id">
-            {{ job.title }}
+            <a :href="job.url">
+                {{ job.title }}
+            </a>
+            <small>{{ job.time_ago }} {{ job.user }}</small>
         </li>
     </div>
 </template>
