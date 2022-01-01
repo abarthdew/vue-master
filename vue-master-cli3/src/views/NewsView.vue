@@ -1,7 +1,10 @@
 <template>
     <div>
-        <li v-for="user in getNews" :key="user.id">
-            {{ user.title }}
+        <li v-for="news in getNews" :key="news.id">
+            <a :href="news.url">
+                {{ news.title }}
+            </a>
+            <small>{{ news.time_ago }} {{ news.domain }}</small>
         </li>
     </div>
 </template>

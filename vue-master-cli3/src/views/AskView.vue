@@ -1,7 +1,10 @@
 <template>
     <div>
         <li v-for="ask in asks" :key="ask.id">
-            {{ ask.title }}
+            <a :href="ask.url">
+                {{ ask.title }}
+            </a>
+            <small>{{ ask.time_ago }} {{ ask.user }}</small>
         </li>
     </div>
 </template>
