@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { mapActions, mapState } from 'vuex'
+import { mapState } from 'vuex'
 
 export default {
     computed: {
@@ -19,12 +19,7 @@ export default {
     created() {
         console.log(this.$route.params.id);
         const userName = this.$route.params.id;
-        this.FETCH_USER(userName);
+        this.$store.dispatch('FETCH_USER', userName);
     },
-    methods: {
-        ...mapActions({
-            FETCH_USER: 'FETCH_USER',
-        }),
-    }
 }
 </script>
