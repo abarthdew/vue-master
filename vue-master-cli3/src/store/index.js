@@ -22,6 +22,12 @@ export const store = new Vuex.Store({
         },
         getAsks(state) {
             return state.asks;
+        },
+        fetchedAsk(state) {
+            return state.asks;
+        },
+        fetchedItem(state) {
+            return state.item;
         }
     },
     mutations: mutations, // You can write code like this,
