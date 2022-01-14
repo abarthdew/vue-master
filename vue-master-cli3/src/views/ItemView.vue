@@ -1,12 +1,29 @@
 <template>
     <div>
-        <h3>{{ this.$store.state.item.title }}</h3>
-        <textarea cols="50" rows="8" :value="this.$store.state.item.content" />
+        <section>
+            <!-- question detail-->
+            <div style="margin:5px; padding:10px; background:#9acd32; width: 90px;">
+                [UserName]
+                <router-link :to="`/user/${fetchedItem.user}`">{{ fetchedItem.id }}</router-link>
+            </div>
+        </section>
+        <section>
+            <!-- question answer-->
+            <h3>{{ fetchedItem.title }}</h3>
+            <div v-html="fetchedItem.content" style="border:1px solid #ddd; padding: 5px;"></div>
+        </section>
         </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
+    computed: {
+        ...mapGetters({
+            fetchedItem: 'fetchedItem',
+        }),
+    },
     created() {
         const itemId = this.$route.params.id
         this.$store.dispatch('FETCH_ITEM', itemId);
