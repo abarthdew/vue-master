@@ -1,10 +1,10 @@
 <template>
     <div>
         <li v-for="ask in asks" :key="ask.id">
-            <a :href="ask.url">
+            <a :href="ask.url" style="font-weight:bold; color: black;">
                 {{ ask.title }}
-            </a>
-            <router-link :to="`item/ask.url`">{{ ask.title }}</router-link>
+            </a> |
+            <router-link :to="`item/${ask.id}`">{{ ask.title }}</router-link>
             <small>{{ ask.time_ago }} {{ ask.user }}</small>
         </li>
     </div>
