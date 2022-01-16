@@ -1,7 +1,7 @@
 <template>
     <div>
         <li v-for="job in getJobs" :key="job.id">
-            <span class="point">{{ job.points }}</span>
+            <span class="point">{{ job.points || 0 }}</span>
             <a :href="job.url" class="title">
                 {{ job.title }}
             </a>
