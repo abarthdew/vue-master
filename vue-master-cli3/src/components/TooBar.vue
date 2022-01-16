@@ -10,7 +10,7 @@
     </div>
 </template>
 
-<style lscoped>
+<style>
     .header {
         padding: 8px;
         display: flex;
