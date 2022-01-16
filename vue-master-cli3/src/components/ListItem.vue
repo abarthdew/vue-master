@@ -1,6 +1,6 @@
 <template>
-    <div v-if="list">
-        <li v-for="item in this.$store.getters[list]" :key="item.id">
+    <div>
+        <li v-for="item in $store.state[listItems]" :key="item.id">
             <span class="point">{{ item.points || 0 }}</span>
             <a :href="item.url" class="title">
                 {{ item.title }}
@@ -32,11 +32,20 @@ export default {
             router: null,
         }
     },
+    computed: {
+        listItems() {
+            if (this.router === 'news') {
+                return 'news';
+            } else if (this.router === 'jobs') {
+                return 'jobs';
+            } else if (this.router === 'asks') {
+                return 'asks';
+            }
+        }
+    },
     created() {
         const name = this.$route.name;
         this.router = name;
-        this.list = 'get' + name.substr(0, 1).toUpperCase() + name.slice(1);
-        console.log(this.router, this.list)
         this.$store.dispatch(`FETCH_${name.toUpperCase()}`);
     },
 }
