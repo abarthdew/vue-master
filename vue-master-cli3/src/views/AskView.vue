@@ -1,11 +1,13 @@
 <template>
     <div>
         <li v-for="ask in asks" :key="ask.id">
-            <a :href="ask.url" style="font-weight:bold; color: black;">
+            <span class="point">{{ ask.points }}</span>
+            <a :href="ask.url" class="title">
                 {{ ask.title }}
             </a> |
             <router-link :to="`item/${ask.id}`">{{ ask.title }}</router-link>
             <small>{{ ask.time_ago }} {{ ask.user }}</small>
+            <hr>
         </li>
     </div>
 </template>
