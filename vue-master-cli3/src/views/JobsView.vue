@@ -1,30 +1,13 @@
 <template>
-    <div>
-        <li v-for="job in getJobs" :key="job.id">
-            <span class="point">{{ job.points || 0 }}</span>
-            <a :href="job.url" class="title">
-                {{ job.title }}
-            </a>
-            <small>{{ job.time_ago }} by
-                <a :href="job.url">
-                    {{ job.domain }}
-                </a>
-            </small>
-            <hr>
-        </li>
-    </div>
+    <list-item/>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import ListItem from '../components/ListItem.vue'
+
 export default {
-    computed: {
-        ...mapGetters({
-            getJobs: 'getJobs',
-        }),
-    },
-    created() {
-        this.$store.dispatch('FETCH_JOBS');
+    components: {
+        ListItem,
     }
 }
 </script>
