@@ -1,12 +1,14 @@
 <template>
     <div>
         <li v-for="news in getNews" :key="news.id">
-            <a :href="news.url">
+            <span class="point">{{ news.points }}</span>
+            <a :href="news.url" class="title">
                 {{ news.title }}
             </a>
             <small>{{ news.time_ago }}
                 <router-link :to="`/user/${news.user}`">{{ news.user }}</router-link>
             </small>
+            <hr>
         </li>
     </div>
 </template>
