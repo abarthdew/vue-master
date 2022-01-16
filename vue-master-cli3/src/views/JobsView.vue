@@ -5,7 +5,11 @@
             <a :href="job.url" class="title">
                 {{ job.title }}
             </a>
-            <small>{{ job.time_ago }} {{ job.user }}</small>
+            <small>{{ job.time_ago }} by
+                <a :href="job.url">
+                    {{ job.domain }}
+                </a>
+            </small>
             <hr>
         </li>
     </div>
