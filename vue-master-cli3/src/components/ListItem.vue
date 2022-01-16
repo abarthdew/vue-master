@@ -5,18 +5,25 @@
             <a :href="item.url" class="title">
                 {{ item.title }}
             </a>
-            <small>{{ item.time_ago }}
-                <span v-if="router === 'news'">
-                    <router-link :to="`/user/${item.user}`">{{ item.user }}</router-link>
-                </span>
-                <span v-if="router === 'jobs'">
+            <p>
+                <template v-if="item.domain">
                     <a :href="item.url">
-                    {{ item.domain }}
+                    {{ item.title }}
                     </a>
-                </span>
-                <span v-if="router === 'asks'">
-                    <router-link :to="`/item/${item.id}`">{{ item.title }}</router-link>
-                </span>
+                </template>
+                <template v-else>
+                    <router-link :to="`/item/${item.id}`">
+                    {{ item.title }}
+                    </router-link>
+                </template>
+            </p>
+            <small>{{ item.time_ago }} by
+                <router-link v-if="item.user" :to="`/user/${item.user}`">
+                    {{ item.user }}
+                </router-link>
+                <a v-else :href="item.url">
+                    {{ item.domain || 'null' }}
+                </a>
             </small>
             <hr>
         </li>
