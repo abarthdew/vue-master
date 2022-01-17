@@ -1,11 +1,11 @@
 <template>
     <div>
         <section>
-            <!-- question detail-->
-            <div style="margin:5px; padding:10px; background:#9acd32; width: 90px;">
-                [UserName]
-                <router-link :to="`/user/${fetchedItem.user}`">{{ fetchedItem.id }}</router-link>
-            </div>
+            <!-- user detail-->
+            <user-profile :userInfo="fetchedItem">
+                <div slot="username">{{ fetchedItem.user }}</div>
+                <template slot="time">{{ fetchedItem.time_ago }}</template>
+            </user-profile>
         </section>
         <section>
             <!-- question answer-->
@@ -17,8 +17,12 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import UserProfile from '../components/UserProfile.vue'
 
 export default {
+    components: {
+        UserProfile,
+    },
     computed: {
         ...mapGetters({
             fetchedItem: 'fetchedItem',

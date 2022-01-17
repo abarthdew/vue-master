@@ -1,13 +1,13 @@
 <template>
     <div>
         <section>
-            <div style="margin:5px; padding:10px; background:#9acd32; width: 90px;">
+            <div style="margin:5px; padding:10px; background:#9acd32; width: 200px;">
                 [UserName]
+            <!-- difinition at parents component-->
+            <slot name="username"></slot>
+            <slot name="time"></slot>
             </div>
-            <li>id : {{ userInfo.id }}</li>
-            <li>karma : {{ userInfo.karma }}</li>
-            <li>created : {{ userInfo.created }}</li>
-            <li>about : {{ userInfo.about }}</li>
+            <slot name="karma"></slot>
         </section>
     </div>
 </template>
