@@ -12,7 +12,7 @@
             <h3>{{ fetchedItem.title }}</h3>
             <div v-html="fetchedItem.content" style="border:1px solid #ddd; padding: 5px;"></div>
         </section>
-        </div>
+    </div>
 </template>
 
 <script>
