@@ -7,7 +7,7 @@
                 <li>created : {{ userInfo.created }}</li>
                 <li>about : {{ userInfo.about }}</li>
             </template>
-            <div slot="karma">karma: {{ userInfo.karma }}</div>
+            <span slot="karma">, karma: {{ userInfo.karma }}</span>
         </user-profile>
     </div>
 </template>
