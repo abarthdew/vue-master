@@ -53,7 +53,6 @@ export default {
     created() {
         const name = this.$route.name;
         this.router = name;
-        this.$store.dispatch(`FETCH_${name.toUpperCase()}`);
     },
 }
 </script>
