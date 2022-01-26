@@ -1,21 +1,22 @@
 <template>
   <div id="app">
-    <too-bar></too-bar>
+    <tool-bar></tool-bar>
     <transition name="fade">
       <router-view></router-view>
     </transition>
+    <spinner :loading="true"></spinner>
   </div>
 </template>
 
 <script>
-import TooBar from './components/TooBar.vue'
-import ToolBar from './components/TooBar.vue'
+import ToolBar from './components/ToolBar.vue'
+import Spinner from './components/Spinner.vue'
 
 export default {
-  components: { TooBar },
   name: 'App',
-  comonents: {
+  components: {
     ToolBar,
+    Spinner,
   },
 }
 </script>
