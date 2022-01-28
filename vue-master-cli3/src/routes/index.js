@@ -5,6 +5,7 @@ import AskView from '../views/AskView';
 import JobsView from '../views/JobsView';
 import UserView from '../views/UserView';
 import ItemView from '../views/ItemView';
+import createListView from '../views/CreateListView'
 
 Vue.use(VueRouter); // vue router setting
 
@@ -18,17 +19,20 @@ export const router = new VueRouter({ // make new router Object
         {
             path: '/news', // url address
             name: 'news',
-            component: NewsView, // displayed component for url; aka 'page'
+            // component: NewsView,
+            component:  createListView('NewsView'),
         },
         {
             path: '/ask', // If you go to '/ask',
             name: 'asks',
-            component: AskView, // You can see this page
+            // component: AskView,
+            component: createListView('NewsView'),
         },
         {
             path: '/jobs',
             name: 'jobs',
-            component: JobsView,
+            // component: JobsView,
+            component: createListView('NewsView'),
         },
         {
             path: '/user/:id',
