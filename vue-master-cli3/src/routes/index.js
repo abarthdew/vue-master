@@ -5,6 +5,8 @@ import ItemView from '../views/ItemView';
 import NewsView from '../views/NewsView';
 import JobsView from '../views/JobsView';
 import AskView from '../views/AskView';
+import bus from '../utils/bus';
+import { store } from '../store/index';
 
 Vue.use(VueRouter); // vue router setting
 
@@ -16,19 +18,54 @@ export const router = new VueRouter({ // make new router Object
             redirect: '/news' // Go to NewsView directly
         },
         {
-            path: '/news', // url address
+            path: '/news', 
             name: 'news',
-            component: NewsView, // high order component
+            component: NewsView, 
+            beforeEnter: (to, from, next) => {
+                bus.$emit('start:spinner');
+                store.dispatch('FETCH_LIST', to.name)
+                    .then(() => {
+                        bus.$emit('end:spinner');
+                        next(); // when data binding has done, go to.name(router you may go)
+                    })
+                    .catch(err => console.log(err));
+                /* ex)
+                if (to.auth) {
+                    next();
+                } else {
+                    router.replace('/login'); or router.push('/');
+                }
+                */
+            } 
         },
         {
-            path: '/ask', // If you go to '/ask',
-            name: 'asks',
+            path: '/ask',
+            name: 'ask',
             component: AskView,
+            beforeEnter: (to, from, next) => {
+                console.log(to)
+                bus.$emit('start:spinner');
+                store.dispatch('FETCH_LIST', to.name)
+                    .then(() => {
+                        bus.$emit('end:spinner');
+                        next();
+                    })
+                    .catch(err => console.log(err));
+            } 
         },
         {
             path: '/jobs',
             name: 'jobs',
             component: JobsView,
+            beforeEnter: (to, from, next) => {
+                bus.$emit('start:spinner');
+                store.dispatch('FETCH_LIST', to.name)
+                    .then(() => {
+                        bus.$emit('end:spinner');
+                        next();
+                    })
+                    .catch(err => console.log(err));
+            } 
         },
         {
             path: '/user/:id',
