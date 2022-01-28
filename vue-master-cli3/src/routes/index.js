@@ -1,11 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router'; // get router
-import NewsView from '../views/NewsView';
-import AskView from '../views/AskView';
-import JobsView from '../views/JobsView';
 import UserView from '../views/UserView';
 import ItemView from '../views/ItemView';
-import createListView from '../views/CreateListView'
+import createListView from '../hoc/CreateListView'
 
 Vue.use(VueRouter); // vue router setting
 
@@ -20,7 +17,7 @@ export const router = new VueRouter({ // make new router Object
             path: '/news', // url address
             name: 'news',
             // component: NewsView,
-            component:  createListView('NewsView'),
+            component:  createListView('NewsView'), // high order component
         },
         {
             path: '/ask', // If you go to '/ask',

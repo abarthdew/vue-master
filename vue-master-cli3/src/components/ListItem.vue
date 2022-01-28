@@ -1,6 +1,6 @@
 <template>
     <div>
-        <li v-for="item in $store.state[listItems]" :key="item.id">
+        <li v-for="item in listItems" :key="item.id">
             <span class="point">{{ item.points || 0 }}</span>
             <a :href="item.url" class="title">
                 {{ item.title }}
@@ -35,19 +35,12 @@
 export default {
     data() {
         return {
-            list: null,
             router: null,
         }
     },
     computed: {
         listItems() {
-            if (this.router === 'news') {
-                return 'news';
-            } else if (this.router === 'jobs') {
-                return 'jobs';
-            } else if (this.router === 'asks') {
-                return 'asks';
-            }
+            return this.$store.state.list;
         }
     },
     created() {
