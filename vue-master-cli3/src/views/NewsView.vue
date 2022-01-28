@@ -4,13 +4,27 @@
 
 <script>
 import ListItem from '../components/ListItem.vue'
+import bus from '../utils/bus'
 
 export default {
     components: {
         ListItem,
     },
     created() {
-        this.$store.dispatch('FETCH_NEWS');
+        bus.$emit('start:spinner'); // send
+        // this.$store.dispatch('FETCH_NEWS') // get data
+        //     .then(() => {
+        //         bus.$emit('end:spinner'); // send
+        //     })
+        //     .catch(err => console.log(err));
+        /* setTimeout */
+        setTimeout(() => { // * data binding is too fase, so use setTimeout...
+        this.$store.dispatch('FETCH_NEWS') // get data
+            .then(() => {
+                bus.$emit('end:spinner'); // send
+            })
+            .catch(err => console.log(err));
+        }, 3000);
     }
 }
 </script>

@@ -3,8 +3,9 @@ import { fetchNewsList, fetchJobList, fetchAskList, fetchUserInfo, fetchCommentI
 export default {
     FETCH_NEWS(context) {
         fetchNewsList()
-            .then(res => {
-                context.commit('SET_NEWS', res.data); 
+            .then(res => { // get data
+                context.commit('SET_NEWS', res.data); // send mutation
+                return res; // return response(send Promise object to View Page - in this case, NewsView.vue)
             })
             .catch(err => console.log(err));
     },
@@ -12,6 +13,7 @@ export default {
         fetchJobList()
             .then(({ data }) => {
                 commit('SET_JOBS', data);
+                return res;
             })
             .catch(err => console.log(err));
     },
@@ -19,6 +21,7 @@ export default {
         fetchAskList()
             .then(res => {
                 context.commit('SET_ASKS', res.data);
+                return res;
             })
             .catch(err => console.log(err));
     },
