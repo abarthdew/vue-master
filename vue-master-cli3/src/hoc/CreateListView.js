@@ -1,11 +1,11 @@
-import ListView from './ListView'
+import ListView from '../views/ListView'
 import bus from '../utils/bus'
 
 // get function
 export default function createListView (name) { // (1) get name
     return { // reusable instance or component Option
-        name: name,
-        created() {
+        name: 'HOC component',
+        created() { // reusable logic
             console.log(11111);
             bus.$emit('start:spinner'); 
             setTimeout(() => { 
