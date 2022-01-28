@@ -10,6 +10,6 @@ export default {
     components: {
         ListItem,
     },
-    Mixins: [ListMixin]
+    mixins: [ListMixin]
 }
 </script>
