@@ -4,7 +4,7 @@ import bus from '../utils/bus'
 // get function
 export default function createListView (name) { // (1) get name
     return { // reusable instance or component Option
-        name: 'HOC component',
+        name: name,
         created() { // reusable logic
             console.log(11111);
             bus.$emit('start:spinner'); 
