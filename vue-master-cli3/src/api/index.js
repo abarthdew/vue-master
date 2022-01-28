@@ -6,13 +6,8 @@ const config = {
 }
 
 // 2. API function definition
-function fetchNewsList() {
-    // return axios.get(config.baseUrl + '/news/1.json');
-    return axios.get(`${config.baseUrl}/news/1.json`);
-}
-
-function fetchAskList() {
-    return axios.get(`${config.baseUrl}/ask/1.json`);
+function fetchList(name) {
+    return axios.get(`${config.baseUrl}/${name}/1.json`);
 }
 
 function fetchNewestList() {
@@ -21,10 +16,6 @@ function fetchNewestList() {
 
 function fetchShowList() {
     return axios.get(`${config.baseUrl}/show/1.json`);
-}
-
-function fetchJobList() {
-    return axios.get(`${config.baseUrl}/jobs/1.json`);
 }
 
 function fetchUserInfo(userName) {
@@ -36,11 +27,9 @@ function fetchCommentItem (itemId) {
 }
 
 export {
-    fetchNewsList,
-    fetchAskList,
+    fetchList,
     fetchNewestList,
     fetchShowList,
-    fetchJobList,
     fetchUserInfo,
     fetchCommentItem,
 }
