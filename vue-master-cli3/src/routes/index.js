@@ -23,13 +23,13 @@ export const router = new VueRouter({ // make new router Object
             path: '/ask', // If you go to '/ask',
             name: 'asks',
             // component: AskView,
-            component: createListView('NewsView'),
+            component: createListView('AskView'),
         },
         {
             path: '/jobs',
             name: 'jobs',
             // component: JobsView,
-            component: createListView('NewsView'),
+            component: createListView('JobsView'),
         },
         {
             path: '/user/:id',
