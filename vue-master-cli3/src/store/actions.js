@@ -1,23 +1,28 @@
 import { fetchList, fetchUserInfo, fetchCommentItem } from '../api/index.js'
 
 export default {
+    // #2
     FETCH_LIST({ commit }, name) {
-        fetchList(name)
-            .then(res => { // get data
-                commit('SET_LIST', res.data); // send mutation
-                return res; // return response(send Promise object to View Page - in this case, NewsView.vue)
+        // #3
+        console.log(3);
+        return fetchList(name)
+        // #4
+            .then(res => {
+                console.log(4);
+                commit('SET_LIST', res.data); 
+                return res; 
             })
             .catch(err => console.log(err));
     },
     FETCH_USER(context) {
-        fetchUserInfo()
+        return fetchUserInfo()
         .then(res => {
             context.commit('SET_USER', res.data);
         })
         .catch(err => console.log(err));
     },
     FETCH_ITEM({ commit }, id) {
-        fetchCommentItem(id)
+        return fetchCommentItem(id)
         .then(({ data }) => {
             commit('SET_ITEM', data);
         })
