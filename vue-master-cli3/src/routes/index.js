@@ -43,11 +43,9 @@ export const router = new VueRouter({ // make new router Object
             name: 'ask',
             component: AskView,
             beforeEnter: (to, from, next) => {
-                console.log(to)
                 bus.$emit('start:spinner');
                 store.dispatch('FETCH_LIST', to.name)
                     .then(() => {
-                        bus.$emit('end:spinner');
                         next();
                     })
                     .catch(err => console.log(err));
@@ -61,7 +59,6 @@ export const router = new VueRouter({ // make new router Object
                 bus.$emit('start:spinner');
                 store.dispatch('FETCH_LIST', to.name)
                     .then(() => {
-                        bus.$emit('end:spinner');
                         next();
                     })
                     .catch(err => console.log(err));
