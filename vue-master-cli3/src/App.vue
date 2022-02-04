@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <!-- example of async & await-->
+    <example-of-async-await></example-of-async-await>
     <tool-bar></tool-bar>
     <transition name="fade">
       <router-view></router-view>
@@ -12,12 +14,14 @@
 import ToolBar from './components/ToolBar.vue'
 import Spinner from './components/Spinner.vue'
 import bus from './utils/bus'
+import ExampleOfAsyncAwait from './views/AsyncAwait.vue'
 
 export default {
   name: 'App',
   components: {
     ToolBar,
     Spinner,
+    ExampleOfAsyncAwait,
   },
   data() {
     return {
