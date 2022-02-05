@@ -7,7 +7,7 @@ const config = {
 
 // 2. API function definition
 function fetchList(name) {
-    return axios.get(`${config.baseUrl}/${name}/1.json`);
+    return axios.get(`${config.baseUrl}/${name}/1.json`); // = return new Promise();
 }
 
 function fetchNewestList() {

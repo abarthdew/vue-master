@@ -7,7 +7,7 @@
 
 <script>
 import axios from 'axios'
-import { handleException } from './utils/handleException'
+import { handleException } from '../utils/handleException'
 
 export default {
     methods: {
