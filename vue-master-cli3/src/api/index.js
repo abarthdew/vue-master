@@ -6,8 +6,13 @@ const config = {
 }
 
 // 2. API function definition
-function fetchList(name) {
-    return axios.get(`${config.baseUrl}/${name}/1.json`); // = return new Promise();
+async function fetchList(name) {
+    try { // error handling
+        const response =  await axios.get(`${config.baseUrl}/${name}/1.json`);
+        return response;
+    } catch(error) {
+        console.log(error);
+    }
 }
 
 function fetchNewestList() {
