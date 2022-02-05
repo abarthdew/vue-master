@@ -7,6 +7,7 @@
 
 <script>
 import axios from 'axios'
+import { handleException } from './utils/handleException'
 
 export default {
     methods: {
@@ -22,10 +23,15 @@ export default {
             .catch(error => console.log(error));
         },
         async loginUser2() {
-            var response = await axios.get('https://jsonplaceholder.typicode.com/users/1');
-            if (response.data.id === 1) {
-                var response2 = await axios.get('https://jsonplaceholder.typicode.com/todos');
-                console.log(response2);
+            try {
+                var response = await axios.get('https://jsonplaceholder.typicode.com/users/1');
+                if (response.data.id === 1) {
+                    var response2 = await axios.get('https://jsonplaceholder.typicode.com/todos');
+                    console.log(response2);
+                }
+            } catch(error) {
+                handleException(error);
+                console.log(error);
             }
         }
     }    
