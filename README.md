@@ -2,21 +2,21 @@
 
 ## 강의에서 다루는 내용
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cbce1174-5a8e-4067-aa74-8bdf8e2683f9/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(1).png)
 
 ## 실습 미리보기
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/feb2c7ff-dda2-46c9-b3ec-24d1c468ca2e/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(2).png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6645e70-7416-4efe-a51b-d6956918f3d8/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(3).png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/da89da56-5453-4750-92b4-be8765d1d895/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(4).png)
 
 ## 개발환경
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c7041653-2ad5-43e2-b223-fa7816c45b47/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(5).png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9e787c65-f7f6-42e2-9ddb-540c16d7697a/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(6).png)
 
 ## node 설치
 
@@ -40,15 +40,13 @@ sudo apt install git-all
 
 ## **Vue.js 스타일 가이드 및 코딩 컨벤션 소개**
 
-![https://vuejs.org/v2/style-guide/](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/72321df6-cb13-4363-90a5-ff8873775ef0/Untitled.png)
-
-https://vuejs.org/v2/style-guide/
+![https://vuejs.org/v2/style-guide/](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(7).png)
+_https://vuejs.org/v2/style-guide/_
 
 ## 제작할 사이트 및 API 소개
 
-![https://news.ycombinator.com/](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4df29c2d-2ade-4974-a2e8-e65bd1821987/Untitled.png)
-
-https://news.ycombinator.com/
+![https://news.ycombinator.com/](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(8).png)
+_https://news.ycombinator.com/_
 
 ## **애플리케이션 라우터 설계**
 
@@ -60,20 +58,19 @@ https://news.ycombinator.com/
 
 ## **Vue CLI 2.x vs Vue CLI 3.x**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dc3b7739-b1d8-47e4-9e12-fd2d61a474d8/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(9).png)
 
-![vue-cli2 webpack 설정](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/77605a4c-7ea7-47ec-aa6e-244b4d21bfc5/Untitled.png)
-
-vue-cli2 webpack 설정
+![vue-cli2 webpack 설정](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(10).png)
+_vue-cli2 webpack 설정_
 
 - `vue-cli2`에서는 webpack 설정 파일이 드러나있음
 - 프로젝트 내 node_modules 가 추가되어 있지 않기 때문에 초기에 npm install 필요함.
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90f2b8fc-015c-4755-b659-033940e523eb/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(11).png)
     
 - gitHub에서 탬플릿을 다운받는 형식으로 씀.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/665eb3c3-38ad-41ab-93c6-b8de04345dd3/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(12).png)
 
 - `vue-cli3`은 webpack 설정 파일이 라이브러리 내부에서 알아서 처리됨. 노출X. → [webpack 설정하려면 직접 추가.](https://cli.vuejs.org/guide/webpack.html#simple-configuration)
 - 플러그인을 사용해서 원하는 기능을 추가할 수 있도록 함.
@@ -82,27 +79,26 @@ vue-cli2 webpack 설정
 
 - preset으로 구성 선택 가능
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/680a6993-a0f4-49e5-99d5-efebba5fb002/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(13).png)
 
 ## **ESLint 도구 소개와 사용해야 하는 이유?**
 
 - 자바스크립트 엔진이 코드를 분석하며 마지막에 ;를 넣어줌 → ;를 붙이지 않아도 코드 동작에 무리가 없음
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/65d189c5-4e6f-4df9-8d2c-f172a34521fb/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(14).png)
     
 - 하지만 ;를 찍게끔 유도함 → 자바스크립트 해석기가 혼동을 할 수도 있기 때문
     
-    ![맨 밑](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc9bb30b-480a-49bd-bbe2-e5aa3d2462da/Untitled.png)
-    
-    맨 밑
+    ![맨 밑](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(15).png)
+    _맨 밑_
     
 - 객채 내 한 쌍이 오는 경우에는 ,를 찍지 않아도 됨
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9731be33-7d87-4ebc-8ad0-60ab182c45d1/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(16).png)
     
 - 두 번째 쌍이 오는 경우 ,를 찍음
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b24813e5-853b-473e-b09c-067adce966d6/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(17).png)
     
 
 ⇒ ESLint : 오류가 없는 코드를 유도하기 위한 장치.
@@ -111,7 +107,7 @@ vue-cli2 webpack 설정
 
 - ESLInt 설정
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/89f8a30e-0730-41d0-bdfe-f37505dc1cf0/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(18).png)
     
 - ESLint를 다음 명령어로 컴포넌트에 추가할 수 있지만, 수가 많아질 수록 번거로움.
     
@@ -120,11 +116,11 @@ vue-cli2 webpack 설정
     eslint-disable
     ```
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a97264c2-2ba4-469b-bb0c-3e94b58c3281/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(19).png)
     
 - [다른 방법 : vue.config.js파일 생성](https://cli.vuejs.org/core-plugins/eslint.html#configuration)
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/135890d8-d248-4eb4-970f-e541467a8c59/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(20).png)
     
     ```jsx
     // vue.config.js
@@ -142,7 +138,7 @@ npm i vue-router --save
 
 - package.json의 `dependencies` : 앱을 실행시키는 데 필요한 비지니스 로직, 앱의 동작을 담당하는 라이브러리가 포함됨. (배포할 때도 포함되어야 하는 라이브러리)
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f1194d2c-db69-4887-898a-438d19b2d3ac/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
     
 
 ### 02_코드
@@ -166,7 +162,7 @@ npm i vue-router --save
     ```
     
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/783074d4-609d-4e72-9cfe-13da42f85da9/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(22).png)
 
 ### 03_vue_router_and export_default_router_1, 2
 
@@ -198,7 +194,7 @@ npm i vue-router --save
 
 - 컴포넌트 이름 코딩 스타일
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/67318648-f598-4c69-882f-437747ab46f5/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(23).png)
     
     - <too-bar>로 써야 하는 이유 : alt+컴포넌트 클릭하면 해당 컴포넌트로 넘어갈 수 있어서 더 편리.
 
@@ -251,20 +247,20 @@ axios.get('https://api.hnpwa.com/v0/news/1.json')
 
 - 다른 언어는 지역 scope로 시작한다면, 자바스크립트는 전역 scope로 시작함.
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8873641f-57ee-4167-a0fb-c0e8df58cd1c/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(24).png)
     
 - 첫번째 this :그냥 this
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f0667dfd-167b-4b48-8391-2e7552d42028/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(25).png)
     
 - 두번째 this : 함수 안 this
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/768a5499-85ff-42d1-be32-076586b15bba/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(26).png)
     
     - 함수 안에서도 this는 전역을 가리킴
 - 세번째 this : Vue생성자 함수 생성
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6b8ce5ab-52a0-487d-b458-05df7102f340/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(27).png)
     
     ```jsx
     function Vue(el) {
@@ -277,40 +273,39 @@ axios.get('https://api.hnpwa.com/v0/news/1.json')
     - `sum 함수`의 this가 `전역`을 가리키는 것과 다르게 `Vue 생성자`의 this는 `함수 자체`를 가리킴.
 - NewsView
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/759a688b-82e8-4b63-8393-3818584ad821/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(28).png)
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/03751330-ce70-4240-8e2d-e5785055bf97/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(29).png)
     
     - 호출 전에는 vue component, 호출 후에는 undefined를 가리킴.
     - http로 서버에 갖다오기 때문에 비동기로 호출됨 → 현재 위치에서 벗어난  this가 발생(자바스크립트 기본 동작 방식)
     - 컴포넌트, 객체 등을 가리키고 싶을 때는 `var vm = this;` 를 사용했음. → 바인딩을 해줘야 하는 번거로움이 있음.
 - ES6 화살표 문법으로 바꿔서 다시 콘솔 찍어보면 호출 전과 후가 같음 → `this.user = response.data;`의 this가 호출되는 위치의 this를 가지고 옴.
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9197f101-db71-4e52-834c-417b1b7f8ed2/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(30).png)
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c86d86f3-625a-4796-87f2-1e4550cd40bf/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(31).png)
     
 
 ## 07_**자바스크립트 비동기 처리(1) - Callback**
 
 - callback.html
     
-    ![file:///home/jonah/Documents/vue-master/vue-master-cli3/src/callback.html](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f41c602c-f4d8-4733-9926-a4520d34a02f/Untitled.png)
-    
-    file:///home/jonah/Documents/vue-master/vue-master-cli3/src/callback.html
+    ![file:///home/jonah/Documents/vue-master/vue-master-cli3/src/callback.html](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(32).png)
+_file:///home/jonah/Documents/vue-master/vue-master-cli3/src/callback.html_
     
     - 함수 결과(3)이 먼저 나오고 데이터 호출 결과(2)가 나중에 나와서, result 객체 안에 값이 들어가지 않음. → 자바스크립트 비동기처리 때문.
     - ajax 데이터 요청이 가고 나서, 기다리지 않고 다음 코드를 실행 → 비동기처리 콜백함수.
 - 콜백을 처리하고 나서, success가 됐을 때 결과를 찍음.
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/43b3ca6d-0bfa-4abd-bf35-8c42f0a6c28c/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(33).png)
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b8d9208b-8fca-490e-b7aa-0b6da16e8570/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(34).png)
     
     - 데이터 호출 결과, 함수 결과가 찍힘.
 - 콜백 과정이 많아지게 되면 콜백 지옥이 생김. 코딩 사고에 위배.
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b5c77cfa-645d-4138-b09b-b4f99f60d0d8/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(35).png)
     
 
 ## **자바스크립트 비동기 처리(2) - Promise**
@@ -357,7 +352,7 @@ axios.get('https://api.hnpwa.com/v0/news/1.json')
 
 - 구조도
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d30fff5f-f6a9-4762-8f45-467dd085da64/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(36).png)
     
     - NewView에서 api를 바로 불러오는 게 아니라, vuex라는 상태, 즉  state에 api를 담아 옴
 - vuex : 상태 관리 도구. 여러 컴포넌트 간 공유되는 데이터 속성.
@@ -371,7 +366,7 @@ axios.get('https://api.hnpwa.com/v0/news/1.json')
 
 - api에서 actions 호출, actions에서 mutations 호출, mutations에서 state 값을 변환한 다음 NewsView에 적용.
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ee2f1f86-42c7-4754-857a-4b0d79a8ec57/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(37).png)
     
 
 ## 11_**[실습 안내] JobsView와 AskView 실습 안내**
@@ -403,10 +398,10 @@ axios.get('https://api.hnpwa.com/v0/news/1.json')
     <router-link :to="`/user/${news.user}`">{{ news.user }}</router-link>
     ```
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8fcb0e54-5ee6-480d-8343-79cb00282675/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(38).png)
     
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/492cb4d5-41c3-45b9-8d1a-cce26f38b79d/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(39).png)
 
 ## 15_**라우터 params을 이용한 User 상세 페이지 구현**
 
@@ -433,22 +428,22 @@ axios.get('https://api.hnpwa.com/v0/news/1.json')
     }
     ```
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fd46a7a8-dfdd-4839-b78f-ecedc32bd81c/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(40).png)
     
 
 ## **[실습] 질문 상세 페이지 구현 실습 안내**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5da85899-f11c-4952-9e0d-e708f793fedb/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(41).png)
 
 ## 16_**[실습] 질문 상세 페이지 실습 풀이 및 오류 디버깅**
 
 - 화면
     
-    ![http://localhost:8080/ask](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/69f3e29f-d6be-4e2f-81c0-60c6e06a36c0/Untitled.png)
+    ![http://localhost:8080/ask](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(42).png)
     
     http://localhost:8080/ask
     
-    ![http://localhost:8080/item/29930670](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b268f4f2-b735-40a1-bc67-890531e74e19/Untitled.png)
+    ![http://localhost:8080/item/29930670](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(43).png)
     
     http://localhost:8080/item/29930670
     
@@ -494,13 +489,13 @@ axios.get('https://api.hnpwa.com/v0/news/1.json')
 - 이렇게 적용하면 라우터 이동할 때 화면이 부드럽게 넘어감.
 - enter, leave는 보통 쌍으로 짝을 지어 css를 적용함.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7e5348c1-4b63-4f4f-a58d-689381a5e09d/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(44).png)
 
 ## **컴포넌트 공통화 리팩토링 소개**
 
 - view에서 바로 개발하는 게 아닌, component 기반으로 리팩토링
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bb0c2807-43df-4aad-883a-56f05fb1d018/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(45).png)
 
 ## 19_css
 
@@ -510,11 +505,11 @@ axios.get('https://api.hnpwa.com/v0/news/1.json')
 
 - NewsView 에는 list-item 이라는 컴포넌트가 생김
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7319ba28-95ea-4848-9ef5-b1941436a6ef/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(46).png)
 
 - AskView 에는 없음
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/54ce4b45-5ca5-468e-84c7-3ec6ad0fc18d/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(47).png)
 
 ## 21_**공통 컴포넌트 구현(1) - 페이지별 데이터 분기**
 
@@ -561,7 +556,7 @@ computed: {
 
 - UserProfile
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/42cefb3f-b28a-44e1-83ba-a6d02266dd60/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(48).png)
 
 > 💡 **Router path와 router-link 형식이 맞지 않으면 컴포넌트나 뷰가 뜨지 않음.**
 
@@ -577,7 +572,7 @@ computed: {
 },
 ```
 
-![Screenshot from 2022-01-16 17-03-05.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ead26088-35f8-4540-99f8-50e818b47a67/Screenshot_from_2022-01-16_17-03-05.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
 
 ```jsx
 <template>
@@ -590,7 +585,7 @@ computed: {
 }
 ```
 
-![Screenshot from 2022-01-16 17-04-38.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5d30d567-0686-47b1-a1cd-1c6d7c657643/Screenshot_from_2022-01-16_17-04-38.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
 
 ## 25_**사용자 컴포넌트 데이터 흐름 처리 1**
 
@@ -604,11 +599,11 @@ computed: {
 
 - UserProfile에서 computed로 접근
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/96923c80-11a8-4ac8-a048-002977e5730b/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
 - UserView에서 props로 전달
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f7fa7a31-5db2-4570-990f-960c63d970b3/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
 
 ## 27_**slot을 이용한 사용자 프로필 컴포넌트 구현**
@@ -625,11 +620,11 @@ computed: {
     },
     ```
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b0ca6641-d390-4060-8adb-483368b4c16f/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/99ca7464-81c0-412a-9bd3-534cdcf3c158/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/daba498d-98a1-4227-a4f9-1a60ac321d85/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
 
 ## 28_**사용자 프로필 컴포넌트 스타일링 및 코드 정리**
@@ -665,11 +660,11 @@ computed: {
     
 - start:spinner가 돌고 있는 모습
     
-    ![Screenshot from 2022-01-27 23-26-11.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b7a79baf-314e-44e7-bfec-9eceee1d5ec2/Screenshot_from_2022-01-27_23-26-11.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
     
 - start로 spinner가 생기고, end로 사라짐 ⇒ 언제 생기게 하고 사라지게 만들건지만 고민하면 됨
     
-    ![Screenshot from 2022-01-27 23-27-01.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8107d01a-3be9-4640-b462-3f2f440807f5/Screenshot_from_2022-01-27_23-27-01.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
     
 - 마지막에 off 필수
     - 이벤트를 등록하면 이벤트 버스에 이벤트 객체가 계속 쌓이기 때문에.
@@ -694,11 +689,11 @@ beforeDestroy() {
 
 - 가상의 네트워크(속도가 느린)를 만들어 spinner 테스트
     
-    ![Screenshot from 2022-01-28 19-46-10.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9fdbf120-96b8-4a16-b3cd-1cf61eb872e8/Screenshot_from_2022-01-28_19-46-10.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
     
-    ![Screenshot from 2022-01-28 19-46-17.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a227a52d-07cf-4703-9323-4ba3d4587635/Screenshot_from_2022-01-28_19-46-17.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
     
-    ![Screenshot from 2022-01-28 19-46-30.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/12742ce9-699c-4479-b2fa-54631d67fdfc/Screenshot_from_2022-01-28_19-46-30.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
     
 - actions.js
 
@@ -717,7 +712,7 @@ FETCH_NEWS(context) {
 
 - [리액트의 hook, vue의 mixin](https://joshua1988.github.io/vue-camp/design/pattern5.html)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8ce00faf-98d9-41e8-9f1c-a74d14559504/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
 
 - createListView 생성 → router에서 사용
     - NewsView 컴포넌트로 바로 연결하지 않음
@@ -749,7 +744,7 @@ FETCH_NEWS(context) {
 - 비교
     - NewView 로 바로 감
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/385121e1-a517-48a7-b14a-246575145e7c/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
     - createListView를 통해 가는 건 App밑에 컴포넌트 하나 더 생김
 - ListView.vue를 만들어 createListView에 랜더링
@@ -842,7 +837,7 @@ FETCH_NEWS(context) {
     
 - 컴포넌트 구조(이전에는 NewsView 아래 바로 ListItem이 있었음) : 실질적 hoc는 NewsView
     
-    ![Screenshot from 2022-01-28 23-43-34.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5f66813a-a195-4f34-8272-7018705ca9f1/Screenshot_from_2022-01-28_23-43-34.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
     
 
 ## 34_**하이 오더 컴포넌트가 적용된 앱 구조 설명 및 흐름 정리**
@@ -856,17 +851,17 @@ name: 'HOC component',
 // 처럼 인자가 컴포넌트 이름이 됨
 ```
 
-![Screenshot from 2022-01-28 23-52-01.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc1d2cec-a89f-439f-82d4-ab20d6c0c559/Screenshot_from_2022-01-28_23-52-01.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
 
 - 즉, NewsView, AskView, JobsView가 하이오더컴포넌트(hoc)
 
-![Screenshot from 2022-01-29 00-10-21.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3a024171-f9d2-4c9b-99a6-b373727f58d8/Screenshot_from_2022-01-29_00-10-21.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
 
 - 이제 NewsView, JobsView,  AskView.vue 필요 없으므로 삭제
 
 ### 구조
 
-![Screenshot from 2022-01-28 23-59-40.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8c7819b6-0bc8-472d-9c12-0b291d9e4655/Screenshot_from_2022-01-28_23-59-40.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
 
 > 💡 **단계**
 router change → createListView(get data) → ListView(page view) → ListItem(component)
@@ -875,7 +870,7 @@ router change → createListView(get data) → ListView(page view) → ListItem(
 
 - hoc의 단점 : hoc를 많이 쓸 수록 컴포넌트가 깊어지므로, 컴포넌트 간 통신이 어려움
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8261a13e-5671-4063-b3e7-0871bc715fcb/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
 
 - [Mixin](https://joshua1988.github.io/vue-camp/reuse/mixins.html) : 재활용 로직
     - 장점
@@ -898,13 +893,11 @@ export default {
 
 - hoc 와 mixin 비교
 
-![hoc - listview를 거침](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1fae28ce-b4a1-45d8-ac26-c35fd4c02738/Untitled.png)
+![hoc - listview를 거침](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+_hoc - listview를 거침_
 
-hoc - listview를 거침
-
-![mixin - 바로 listitem](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8625bdda-1899-4e40-a3b5-0c56a9bc5fe1/Screenshot_from_2022-01-29_02-31-59.png)
-
-mixin - 바로 listitem
+![mixin - 바로 listitem](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
+_mixin - 바로 listitem_
 
 ## **UX를 고려한 데이터 호출 시점**
 
@@ -1027,9 +1020,9 @@ state: {
     },
     ```
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/22c1f729-2561-4236-9416-e9a8b30d6400/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b477272e-53a6-4df5-9e5a-5ffa8bd6bf99/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
     ```jsx
     beforeEnter: (to, from, next) => {
@@ -1051,31 +1044,31 @@ state: {
 
 1. 일반 자바스크립트의 비동기 코드
     
-    ![john이라는 id가 있을 시 products 함수 실행](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/63f6e6dd-9a49-4168-8ebb-7057654fbe2b/Untitled.png)
+    ![john이라는 id가 있을 시 products 함수 실행](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
     john이라는 id가 있을 시 products 함수 실행
     
-    ![받아 온 결과 값 products는 콜백 함수 안에서 처리해야 비동기 처리 가능](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/06c07295-db00-4e67-bc57-2954962800f1/Untitled.png)
+    ![받아 온 결과 값 products는 콜백 함수 안에서 처리해야 비동기 처리 가능](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
     받아 온 결과 값 products는 콜백 함수 안에서 처리해야 비동기 처리 가능
     
 2. promise로 쓰는 비동기 코드
     
-    ![함수](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cd1787e2-f379-4a7a-a422-d18a7105bdce/Untitled.png)
+    ![함수](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
     함수
     
-    ![함수에 대한 로직](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a5a3f073-2406-4c4c-8958-5d18a1ea4334/Untitled.png)
+    ![함수에 대한 로직](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
     함수에 대한 로직
     
 3. 2에서 함수 이름을 좀 더 명시적으로
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dfce0952-f05d-4691-853a-7e72b77e9b41/Untitled.png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
 - 결국, john 이라는 id가 있을 시 불러온 products값을 products 변수에 담고, 이 값을 불러올 수 있는지에 대한 과정이 핵심.
     
-    ![논리과정 예시(실제로직 아님)](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/347fe5d9-2cb5-483f-abd3-590f86311247/Untitled.png)
+    ![논리과정 예시(실제로직 아님)](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
     
     논리과정 예시(실제로직 아님)
     
