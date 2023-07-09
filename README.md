@@ -572,7 +572,7 @@ computed: {
 },
 ```
 
-![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(49).png)
 
 ```jsx
 <template>
@@ -585,7 +585,7 @@ computed: {
 }
 ```
 
-![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(50).png)
 
 ## 25_**사용자 컴포넌트 데이터 흐름 처리 1**
 
@@ -599,11 +599,11 @@ computed: {
 
 - UserProfile에서 computed로 접근
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(51).png)
     
 - UserView에서 props로 전달
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(52).png)
     
 
 ## 27_**slot을 이용한 사용자 프로필 컴포넌트 구현**
@@ -620,11 +620,11 @@ computed: {
     },
     ```
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(53).png)
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(54).png)
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(55).png)
     
 
 ## 28_**사용자 프로필 컴포넌트 스타일링 및 코드 정리**
@@ -660,11 +660,11 @@ computed: {
     
 - start:spinner가 돌고 있는 모습
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(56).png)
     
 - start로 spinner가 생기고, end로 사라짐 ⇒ 언제 생기게 하고 사라지게 만들건지만 고민하면 됨
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(57).png)
     
 - 마지막에 off 필수
     - 이벤트를 등록하면 이벤트 버스에 이벤트 객체가 계속 쌓이기 때문에.
@@ -689,11 +689,11 @@ beforeDestroy() {
 
 - 가상의 네트워크(속도가 느린)를 만들어 spinner 테스트
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(58).png)
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(59).png)
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(60).png)
     
 - actions.js
 
@@ -712,7 +712,7 @@ FETCH_NEWS(context) {
 
 - [리액트의 hook, vue의 mixin](https://joshua1988.github.io/vue-camp/design/pattern5.html)
 
-![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(61).png)
 
 - createListView 생성 → router에서 사용
     - NewsView 컴포넌트로 바로 연결하지 않음
@@ -744,7 +744,7 @@ FETCH_NEWS(context) {
 - 비교
     - NewView 로 바로 감
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(62).png)
     
     - createListView를 통해 가는 건 App밑에 컴포넌트 하나 더 생김
 - ListView.vue를 만들어 createListView에 랜더링
@@ -837,7 +837,7 @@ FETCH_NEWS(context) {
     
 - 컴포넌트 구조(이전에는 NewsView 아래 바로 ListItem이 있었음) : 실질적 hoc는 NewsView
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(63).png)
     
 
 ## 34_**하이 오더 컴포넌트가 적용된 앱 구조 설명 및 흐름 정리**
@@ -851,17 +851,17 @@ name: 'HOC component',
 // 처럼 인자가 컴포넌트 이름이 됨
 ```
 
-![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(64).png)
 
 - 즉, NewsView, AskView, JobsView가 하이오더컴포넌트(hoc)
 
-![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(65).png)
 
 - 이제 NewsView, JobsView,  AskView.vue 필요 없으므로 삭제
 
 ### 구조
 
-![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(66).png)
 
 > 💡 **단계**
 router change → createListView(get data) → ListView(page view) → ListItem(component)
@@ -870,7 +870,7 @@ router change → createListView(get data) → ListView(page view) → ListItem(
 
 - hoc의 단점 : hoc를 많이 쓸 수록 컴포넌트가 깊어지므로, 컴포넌트 간 통신이 어려움
 
-![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(67).png)
 
 - [Mixin](https://joshua1988.github.io/vue-camp/reuse/mixins.html) : 재활용 로직
     - 장점
@@ -893,10 +893,10 @@ export default {
 
 - hoc 와 mixin 비교
 
-![hoc - listview를 거침](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+![hoc - listview를 거침](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(68).png)
 _hoc - listview를 거침_
 
-![mixin - 바로 listitem](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(21).png)
+![mixin - 바로 listitem](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(69).png)
 _mixin - 바로 listitem_
 
 ## **UX를 고려한 데이터 호출 시점**
@@ -1020,9 +1020,9 @@ state: {
     },
     ```
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(70).png)
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(71).png)
     
     ```jsx
     beforeEnter: (to, from, next) => {
@@ -1044,31 +1044,31 @@ state: {
 
 1. 일반 자바스크립트의 비동기 코드
     
-    ![john이라는 id가 있을 시 products 함수 실행](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![john이라는 id가 있을 시 products 함수 실행](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(72).png)
     
     john이라는 id가 있을 시 products 함수 실행
     
-    ![받아 온 결과 값 products는 콜백 함수 안에서 처리해야 비동기 처리 가능](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![받아 온 결과 값 products는 콜백 함수 안에서 처리해야 비동기 처리 가능](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(73).png)
     
     받아 온 결과 값 products는 콜백 함수 안에서 처리해야 비동기 처리 가능
     
 2. promise로 쓰는 비동기 코드
     
-    ![함수](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![함수](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(74).png)
     
     함수
     
-    ![함수에 대한 로직](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![함수에 대한 로직](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(75).png)
     
     함수에 대한 로직
     
 3. 2에서 함수 이름을 좀 더 명시적으로
     
-    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![Untitled](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(76).png)
     
 - 결국, john 이라는 id가 있을 시 불러온 products값을 products 변수에 담고, 이 값을 불러올 수 있는지에 대한 과정이 핵심.
     
-    ![논리과정 예시(실제로직 아님)](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master().png)
+    ![논리과정 예시(실제로직 아님)](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(77).png)
     
     논리과정 예시(실제로직 아님)
     
