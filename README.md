@@ -1,4 +1,4 @@
-# vue-master
+# [vue-master](https://github.com/abarthdew/vue-master){:target="_blank"}
 
 ## 강의에서 다루는 내용
 
@@ -1055,12 +1055,10 @@ state: {
 2. promise로 쓰는 비동기 코드
     
     ![함수](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(74).png)
-    
-    함수
+    _함수_
     
     ![함수에 대한 로직](https://raw.githubusercontent.com/abarthdew/vue-master/main/vue-master-cli3/src/assets/vue-master(75).png)
-    
-    함수에 대한 로직
+    _함수에 대한 로직_
     
 3. 2에서 함수 이름을 좀 더 명시적으로
     
