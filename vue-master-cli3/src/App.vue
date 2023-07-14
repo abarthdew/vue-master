@@ -61,16 +61,20 @@ export default {
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
+{
   opacity: 0;
 }
+
 .title {
-   font-weight:bold;
-   color: black;
+  font-weight: bold;
+  color: black;
 }
+
 .point {
-  background:yellowgreen;
-  width:50px;
-  margin-right:5px;
+  background: yellowgreen;
+  width: 50px;
+  margin-right: 5px;
 }
 </style>

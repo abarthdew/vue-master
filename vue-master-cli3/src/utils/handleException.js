@@ -1,3 +1,3 @@
 function handleException(status) {
-    // handle error logic
+  // handle error logic
 }

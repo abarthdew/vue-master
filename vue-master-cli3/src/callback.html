@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <div>jquery ajax</div>
+<div>jquery ajax</div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script>
-        // ajax call function
-        function callAjax() {
-            return new Promise(function (resolve, reject) { // Promise must get parameter named resolve and reject
-                $.ajax({ // ajax call
-                    url: 'https://api.hnpwa.com/v0/news/1.json',
-                    success: function (data) {
-                        resolve(data); // when ajax call success, resolve handle success data
-                    }
-                });
-            });
-        };
+<script>
+  // ajax call function
+  function callAjax() {
+    return new Promise(function (resolve, reject) { // Promise must get parameter named resolve and reject
+      $.ajax({ // ajax call
+        url: 'https://api.hnpwa.com/v0/news/1.json',
+        success: function (data) {
+          resolve(data); // when ajax call success, resolve handle success data
+        }
+      });
+    });
+  };
 
-        function fetchData() {
-            var result = [];
-            callAjax() // Promise Object call
-            .then(function(data) { // Promise resolve : Situation when Promise call success
-                console.log('data call result', data);
-                result = data;
-                console.log('function result', result);
-            })
-            .catch(function(err) { // Promise reject
-                console.log(err);
-            }); 
-        };
-        fetchData();
-    </script>
+  function fetchData() {
+    var result = [];
+    callAjax() // Promise Object call
+      .then(function (data) { // Promise resolve : Situation when Promise call success
+        console.log('data call result', data);
+        result = data;
+        console.log('function result', result);
+      })
+      .catch(function (err) { // Promise reject
+        console.log(err);
+      });
+  };
+  fetchData();
+</script>
 </body>
 </html>
